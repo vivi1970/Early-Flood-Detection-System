@@ -24,7 +24,7 @@ void setup()
 void loop()
 {
   distance = 0.01723 * readUltrasonicDistance(9, 8);
-  if (distance > 10) {
+  if (distance < 30) {
     digitalWrite(11, HIGH);
   } else {
     digitalWrite(11, LOW);
